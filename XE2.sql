@@ -44,3 +44,27 @@ json_value(jsondata, '$.ability.name') name
 , json_value(jsondata, '$.ability.url') url
 from TMP_JSON_TABLE where idcliente = 2;
 
+-------------------------------
+--Clase 22102023
+-------------------------------
+/*
+Uso de variables en pl/sql
+*/
+
+DECLARE
+    V_CLIENTE NUMBER;
+BEGIN
+    V_CLIENTE := 3;
+
+    FOR DATOS IN (select 
+        json_value(jsonData, '$.nombre') nombre,
+        json_value(jsonData, '$.puesto') puesto,
+        json_value(jsonData, '$.salario') salario
+        from TMP_JSON_TABLE where idcliente =  V_CLIENTE) LOOP
+        DBMS_OUTPUT.PUT_LINE('NAME: '|| DATOS.NOMBRE);
+        DBMS_OUTPUT.PUT_LINE('URL: '|| DATOS.PUESTO);
+    END LOOP;
+
+END;
+
+
