@@ -75,4 +75,19 @@ END;
 --Cambio para hacer pull
 -----------------------
 
+-----------------------
+--Insert para clientes
+-----------------------
+INSERT INTO FACTURA (idfactura, cliente, valor) 
+values (1,1,1340);
+INSERT INTO FACTURA (idfactura, cliente, valor) 
+values (2,1,11340);
+INSERT INTO FACTURA (idfactura, cliente, valor) 
+values (3,2,22340);
+INSERT INTO FACTURA (idfactura, cliente, valor) 
+values (4,2,2340);
+INSERT INTO FACTURA (idfactura, cliente, valor) 
+values (5,3,3340);
+INSERT INTO FACTURA (idfactura, cliente, valor) 
+values (6,25,3340);
 
