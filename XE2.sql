@@ -91,3 +91,5 @@ values (5,3,3340);
 INSERT INTO FACTURA (idfactura, cliente, valor) 
 values (6,25,3340);
 
+
+-- AGREGAR ALGO EXTRA
